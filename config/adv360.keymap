@@ -20,6 +20,15 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+
+      mt: mod_tap {
+          compatible = "zmk,behavior-hold-tap";
+          #binding-cells = <2>;
+          flavor = "tap-preferred";
+          tapping-term-ms = <151>;
+          bindings = <&kp>, <&kp>;
+          display-name = "Mod-Tap";
+      };
     };
 
   keymap {
